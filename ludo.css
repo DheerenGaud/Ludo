@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.inp{
+  display:  flex;
+}
+input{
+  height: 40px;
+}
+.inp #bt{
+  background-color: rgb(163, 95, 95);
+  width: 80px;
+}
+.inp #bt:hover{
+  background-color: rgb(168, 57, 57);
+}
+
+.ludo{
+  display: flex;
+}
+body{
+  margin-top: 5px;
+}
+.table1{
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+  }
+  .table2{
+    margin-left: 85px;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+  
+
+  }
+  td {
+    border: 1px solid black;
+    width: 46.5px;
+    height: 45px;
+  }
+  /* Style the game pieces */
+  .dice{
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    /* border: 2px solid black; */
+  }
+    .diceRoll{
+      width: 75px;
+      height: 75px;
+      z-index: 100;
+    }
+  .red {
+    border: 1px solid black;
+    width: 290px;
+    height: 290px;
+    background-color: red;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .red .box{
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    .red .r{
+    margin: 22px;
+    width: 70px;
+    height: 70px;
+    background-color:rgb(234, 105, 105);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .red .r .rb{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color:red;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+    }
+  .yellow {
+    border: 1px solid black;
+    width: 290px;
+    height: 290px;
+    background-color: yellow;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+   .yellow .box{
+  
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .yellow .y{
+    margin:22.5px;
+    width: 70px;
+    height: 70px;
+    background-color:rgb(226, 235, 141);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .yellow .yb{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+ 
+    background-color:yellow;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .green {
+    border: 1px solid black;
+    width: 290px;
+    height: 290px;
+    background-color: green;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .green .box{
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .green .g{
+    margin:22.5px;
+    width: 70px;
+    height: 70px;
+    background-color:rgb(208, 241, 130);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .green .g .gb{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+ 
+    background-color: green;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .blue {
+    border: 1px solid black;
+    width: 290px;
+    height: 290px;
+    background-color: blue;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .blue .box{
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .blue .b{
+    margin:22.5px;
+    width: 70px;
+    height: 70px;;
+    background-color:rgb(89, 118, 223);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+   .blue .b .bb{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  
+    background-color: blue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  button{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+  }
+  
+  .img{
+    width: 145px;
+    height: 145px;
+  }
+
+  .img img{
+    width: 145px;
+    height: 145px;
+    border-radius: 10px;
+  }

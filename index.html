@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ludo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="ludo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ludo</title>
+</head>
+<body>
+  <div class="ludo">
+    <div class="container">
+          <div class="table1">
+      <div class="dice">
+        <img src="./images/dice6.png" alt="" class="diceRoll" id="d1">
+      </div>
+        <div class="red">
+          <div class="box">
+            <div class="r">
+                <button class="rb" id="r1" onClick="Click(id)">R</button>
+            </div>
+            <div class="r">
+                <button class="rb" id="r2" onClick="Click(id)">R</button>
+            </div>
+            <div class="r">
+                <button class="rb" id="r3" onClick="Click(id)">R</button>
+            </div>
+            <div class="r">
+                <button class="rb" id="r4" onClick="Click(id)">R</button>
+            </div> 
+        </div>
+        </div> 
+        <table>
+          <tr>
+            <td><button id="11"></button></td>
+            <td><button id="12"><i class="fa fa-arrow-down" aria-hidden="true" style="font-size: 25px;  color:blue;"></i></button></td>
+            <td><button id="13"></button></td>
+          </tr>
+          <tr>
+            <td><button id="10"></button></td>
+            <td  style="background-color:blue;"><button id="1b" style="background-color:blue;"></button></td>
+            <td style="background-color: blue;"><button id="14" style="background-color: blue;" ><i class="fa fa-star" aria-hidden="true" style="font-size: 25px;  color:white;"></i></button></td>
+          </tr>
+          <tr>
+            <td style="background-color: rgb(178, 219, 116);"><button id="9" style="background-color: rgb(178, 219, 116);" ><i  class="fa fa-bullseye" aria-hidden="true" style="font-size: 35px;  color:white;"></i></button></td>
+            <td  style="background-color:blue;"><button id="2b" style="background-color:blue;"></button></td>
+            <td><button id="15"></button></td>
+          </tr>
+          <tr>
+            <td><button id="8"></button></td>
+            <td  style="background-color:blue;"><button id="3b" style="background-color:blue;"></button></td>
+            <td><button id="16"></button></td>
+          </tr>
+          <tr>
+            <td><button id="7"></button></td>
+            <td  style="background-color:blue;"><button id="4b" style="background-color:blue;"></button></td>
+            <td><button id="17"></button></td>
+          </tr>
+          <tr>
+            <td><button id="6"></button></td>
+            <td  style="background-color:blue;"><button id="5b" style="background-color:blue;"></button></td>
+            <td><button id="18"></button></td>
+          </tr>
+        </table> 
+        <div class="blue">
+          <div class="box">
+            <div class="b">
+                <button class="bb" id="b1" onClick="Click(id)">B</button>
+            </div>
+            <div class="b">
+                <button class="bb" id="b2" onClick="Click(id)">B</button>
+            </div>
+            <div class="b">
+                <button class="bb" id="b3" onClick="Click(id)">B</button>
+            </div>
+            <div class="b">
+                <button class="bb" id="b4" onClick="Click(id)">B</button>
+            </div> 
+        </div>
+        </div>
+        <div class="dice">
+          <img src="./images/dice6.png" alt="" class="diceRoll" id="d2">
+        </div>
+        </div>
+        
+        <div class="table2">
+          <table>
+            <tr>
+              <td><button id="52"></button></td>
+              <td  style="background-color: red;"><button id="1" style="background-color: red;" ><i class="fa fa-star" aria-hidden="true" style="font-size: 25px;  color:white;"></i></button></td>
+              <td><button id="2"></button></td>
+              <td><button id="3"></button></td>
+              <td><button id="4"></button></td>
+              <td><button id="5"></button></td>
+            </tr>
+            <tr>
+              <td><button id="51"><i class="fa fa-arrow-down"  aria-hidden="true" style="font-size: 25px; transform: rotate(270deg); color:red;"></i></button></td>
+              <td style="background-color: red;"><button id="1r"  style="background-color: red;"></button></td>
+              <td style="background-color: red;"><button id="2r" style="background-color: red;"></button></td>
+              <td style="background-color: red;"><button id="3r" style="background-color: red;"></button></td>
+              <td style="background-color: red;"><button id="4r" style="background-color: red;"></button></td>
+              <td style="background-color: red;"><button id="5r" style="background-color: red;"></button></td>
+            </tr>
+            <tr>
+              <td><button id="50"></button></td>
+              <td><button id="49" ></button></td>
+              <td style="background-color: rgb(178, 219, 116);"><button id="48"  style="background-color: rgb(178, 219, 116);" ><i  class="fa fa-bullseye" aria-hidden="true" style="font-size: 35px;  color:white;"></i></button></td>
+              <td><button id="47" ></button></td>
+              <td><button id="46"></button></td>
+              <td><button id="45"></button></td>
+            </tr>
+          </table>
+          <div class="img">
+            <img src="./images/ludoWin.jpg" alt="" style="transform:rotate(-90deg);">
+          </div>
+          <table>
+            <tr>
+              <td><button id="19"></button></td>
+              <td><button id="20"></button></td>
+              <td><button id="21"></button></td>
+              <td style="background-color: rgb(178, 219, 116);"><button id="22" style="background-color: rgb(178, 219, 116);" ><i  class="fa fa-bullseye" aria-hidden="true" style="font-size: 35px;  color:white;"></i></button></td>
+              <td><button id="23"></button></td>
+              <td><button id="24"></button></td>
+            </tr>
+            <tr>
+              <td style="background-color: yellow;"><button id="5y" style="background-color: yellow;"></button></td>
+              <td style="background-color: yellow;"><button id="4y" style="background-color: yellow;"></button></td>
+              <td style="background-color: yellow;"><button id="3y" style="background-color: yellow;"></button></td>
+              <td style="background-color: yellow;"><button id="2y" style="background-color: yellow;"></button></td>
+              <td style="background-color: yellow;"><button id="1y" style="background-color: yellow;"></button></td>
+              <td ><button id="25" ><i class="fa fa-arrow-down"  aria-hidden="true" style="font-size: 25px; transform: rotate(90deg); color:yellow;"></i></button></td>
+            </tr>
+            <tr>
+              <td><button id="31"></button></td>
+              <td><button id="30"></button></td>
+              <td><button id="29"></button></td>
+              <td><button id="28"></button></td>
+              <td style="background-color: yellow;" ><button id="27" style="background-color: yellow;" ><i class="fa fa-star" aria-hidden="true" style="font-size: 25px;  color:white;"></i></button></td>
+              <td><button id="26"></button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="table1">
+          <div class="dice"  style="order: 5;">
+            <img src="./images/dice6.png" alt="" class="diceRoll" id="d4">
+          </div>
+          <div class="yellow"  style="order: 4;">
+            <div class="box">
+              <div class="y">
+                  <button class="yb" id="y1" onClick="Click(id)">Y</button>
+              </div>
+              <div class="y">
+                  <button class="yb" id="y2" onClick="Click(id)">Y</button>
+              </div>
+              <div class="y">
+                  <button class="yb"id="y3" onClick="Click(id)">Y</button>
+              </div>
+              <div class="y">
+                  <button class="yb"id="y4" onClick="Click(id)">Y</button>
+              </div> 
+          </div>
+          </div> 
+          <table  style="order: 3;">
+            <tr>
+              <td><button id="44"></button></td>
+              <td style="background-color:green; "><button id="5g" style="background-color:green;"></button></td>
+              <td><button id="32"></button></td>
+            </tr>
+            <tr>
+              <td><button id="43"></button></td>
+              <td style="background-color:green; "><button id="4g" style="background-color:green;"></button></td>
+              <td><button id="33"></button></td>
+            </tr>
+            <tr>
+              <td><button id="42"></button></td>
+              <td style="background-color:green; "><button id="3g" style="background-color:green;"></button></td>
+              <td><button id="34"></button></td>
+            </tr>
+            <tr>
+              <td><button id="41"></button></td>
+              <td style="background-color:green; "><button id="2g" style="background-color:green;"></button></td>
+              <td style="background-color: rgb(178, 219, 116);"><button id="35" style="background-color: rgb(178, 219, 116);" ><i  class="fa fa-bullseye" aria-hidden="true" style="font-size: 35px;  color:white;"></i></button></td>
+            </tr>
+            <tr>
+              <td style="background-color: green;"><button id="40" style="background-color: green;" ><i class="fa fa-star" aria-hidden="true" style="font-size: 25px;  color:white;"></i></button></td>
+              <td style="background-color:green; "><button id="1g" style="background-color:green;"></button></td>
+              <td><button id="36"></button></td>
+            </tr>
+            <tr>
+              <td><button id="39"></button></td>
+              <td><button id="38"><i class="fa fa-arrow-down"  aria-hidden="true" style="font-size: 25px; transform: rotate(180deg); color:green;"></i></button></td>
+              <td><button id="37"></button></td>
+            </tr>
+          </table> 
+          <div class="green" style="order: 2;">
+            <div class="box">
+              <div class="g">
+                  <button class="gb" id="g1" onClick="Click(id)">G</button>
+              </div>
+              <div class="g">
+                  <button class="gb" id="g2" onClick="Click(id)">G</button>
+              </div>
+              <div class="g">
+                  <button class="gb" id="g3" onClick="Click(id)">G</button>
+              </div>
+              <div class="g">
+                  <button class="gb" id="g4" onClick="Click(id)">G</button>
+              </div> 
+          </div>
+          </div>
+          <div class="dice"  style="order: 1;">
+            <img src="./images/dice6.png" alt="" class="diceRoll" id="d3">
+          </div>
+          </div>
+    </div>
+      
+    
+    <!-- Hack Ludo -->
+
+          <!-- <div class="inp">
+            <input  id="x" type="text">
+             <button id="bt">Submit</button>
+          </div> -->
+          <div class="inp">  
+            <input id="NoOfPlayer" type="text" placeholder="No of Player">
+            <button id="bt" onclick="Play()">Submit</button>
+          </div>
+  </div>
+        
+         <script src="ludo.js"></script>
+</body>
+</html>
